@@ -6,46 +6,49 @@ printHelloWorld();
 function doubleNumber(num) { //2
 return num * 2;
 }
-let num = 7;  //Num waarde
-console.log(doubleNumber(num));
+console.log(doubleNumber(7));
 
 function sumTwoNumbers(a, b) { //3
 return a + b;
 }
-let a = 14;
-let b = 6;
-console.log(sumTwoNumbers(a, b));
+console.log(sumTwoNumbers(14, 6));
 
 function toUpperCase(str) { //4
 console.log(str.toUpperCase());
 }
-let str = "Let string";
-toUpperCase(str);
+toUpperCase("string");
 
 function isEven(num) { //5
 return num % 2 === 0;
 }
-console.log(isEven(num))
+console.log(isEven(12))
 
 function sumArray(arr) { //6
 return arr.reduce((acc, val) => acc + val, 0);
 }
-let acc = 10;
-let val = 20;
-console.log(sumArray(arr));
+console.log(sumArray([1, 2, 3, 4, 5, 6]));  //idk
 
 function getCurrentDateTime() { //7
-return new Date();
+return new Date();  //Date is een object
 }
+console.log(getCurrentDateTime());  //werlt gwm wpw
 
 function calculateAverage(x, y, z) { //8
 return (x + y + z) / 3;
 }
+console.log(2, 4, 6);
 
 function getFirstAndLast(arr) { //9
 return [arr[0], arr[arr.length - 1]];
+//arr[0];
+//arr[arr.length - 1];
 }
+const firstAndLast = getFirstAndLast(["a", "b", "c"]); 
+console.log(firstAndLast[0]); 
+console.log(firstAndLast[1]);   //Pakt alleen vanaf 1e, dus b en c
+//console.log(getFirstAndLast([1, 2, 3, 4]))
 
 function greet(name, greeting) { //10
 return `${greeting}, ${name}!`;
 }
+console.log(greet ("Michael", "Wsg"));
